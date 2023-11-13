@@ -6,3 +6,7 @@
         color: white;
     }
 }
+#toggleButton {
+    /* Mobil cihazlarda görünürlük ayarları */
+    display: block; /* veya inline, inline-block, vs. */
+}
