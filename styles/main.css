@@ -4,6 +4,7 @@
         /* Örnek stil tanımı */
         font-size: 20px;
         color: white;
+        background-color: rgb(0, 21, 31);
     }
 }
 #toggleButton {
