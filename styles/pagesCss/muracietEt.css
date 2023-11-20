@@ -1,0 +1,23 @@
+.formbox{
+  background-color: rgba(255, 255, 255, 0.218);
+}
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: white;
+  gap: 20px;
+  font-size: 20px;
+  text-transform: capitalize;
+
+}
+
+form input {
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+form textarea {
+  padding: 10px 5px;
+  border-radius: 10px;
+}

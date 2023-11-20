@@ -1,0 +1,11 @@
+section .image_box {
+  background-color: white;
+  border-radius: 5px;
+}
+section .image_box img {
+  width: 30%;
+  padding: 10px;
+}
+section h2 {
+  color: white;
+}

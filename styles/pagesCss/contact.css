@@ -1,0 +1,16 @@
+form{
+    padding: 10%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, 0.218);
+}
+form input{
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+form textarea{
+    padding: 10px 5px;
+    border-radius: 10px;
+}

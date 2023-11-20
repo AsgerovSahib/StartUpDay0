@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="./styles/index.css" />
 
+    <link rel="stylesheet" href="./styles/pagesCss/muracietEt.css" />
+
     <!--* Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -30,7 +32,7 @@
   <body style="background-image: url(./media/bg-media.jfif)">
     <header>
       <h1>startupday</h1>
-      <button id="toggleButton" style="color: white; border: none">
+      <button id="toggleButton" style="background: none; border: none">
         <!-- <i class="fa-solid fa-bars"></i> -->
         <!-- <img width="30px" src="./media/menu.png" alt="" /> -->
         <img width="25px" src="./media/menu.svg" alt="" />
@@ -40,12 +42,64 @@
       <nav>
         <ul>
           <li><a href="./index.html">Haqqında</a></li>
-          <li><a href="./partniyorlar.html">Partniyorlar</a></li>
+          <li><a href="./sponsorlar.html">Sponsorlar</a></li>
+          <li><a href="./partniyorlar.html">Tərafdaşlar</a></li>
           <li><a href="./muraciet.html">Müraciət et</a></li>
           <li><a href="./contact.html">Əlaqə</a></li>
         </ul>
       </nav>
     </section>
+
+    <section class="formbox" style="padding-bottom: 100px; padding-top: 20px;">
+      <form action="">
+        <label for="">ad soyad</label>
+        <input type="text" placeholder="ad və soyad"/>
+        <label for="">əlaqə nömrəsi</label>
+        <input type="number"placeholder="əlaqə nömrəsi" />
+        <label for="">email</label>
+        <input type="email" placeholder="aktiv işlətdiyiniz email adres" />
+        <label for=""
+          >layihənin təsviri
+          <span style="text-transform: lowercase">(max 500 söz)</span></label
+        >
+        <textarea name="" id="" cols="10" rows="5" maxlength="500"></textarea>
+
+        <label for=""
+          >layihənin həll etdiyi problemlər
+          <span style="text-transform: lowercase">(max 500 söz)</span></label
+        >
+        <textarea name="" id="" cols="10" rows="5" maxlength="500"></textarea>
+
+        <label for="">layihəniz hansı sahəyə aitdir?</label>
+
+        <div>
+          <input type="radio" />
+          <label for="">finans</label><br />
+          <input type="radio" />
+          <label for="">aqrar və yaşıl texnologiya</label><br />
+          <input type="radio" />
+          <label for="">robotit texnologiyalar</label><br />
+          <input type="radio" />
+          <label for="">digər</label><br /><input type="text" placeholder="digər hansı sahə ?" />
+        </div>
+
+        <label for="">layihəniz hansı mərhələdədir?</label>
+
+        <div>
+          <input type="radio" />
+          <label for="">idea</label><br />
+          <input type="radio" />
+          <label for="">mpv</label><br />
+        </div>
+        <label for="">layihənizin təqdimatı PDF</label>
+        <input type="file" name="" id="">
+
+        <label for="">Layihə <span>haqqında məlumatı hardan əldə edibsiniz ?</span></label>
+        <input type="text" />
+        <button type="button" class="btn btn-light">Müraciəti tamamla</button>
+      </form>
+    </section>
+
 
     <!--* Bootstrap -->
     <script
