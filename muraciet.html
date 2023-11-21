@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./styles/reset.css" />
 
     <link rel="stylesheet" href="./styles/main.css" />
@@ -42,20 +49,22 @@
       <nav>
         <ul>
           <li><a href="./index.html">Haqqında</a></li>
-          <li><a href="./sponsorlar.html">Sponsorlar</a></li>
-          <li><a href="./partniyorlar.html">Tərafdaşlar</a></li>
+          <li><a href="./sponsorlar.html">Tərafdaşlar</a></li>
+          <li><a href="./partniyorlar.html">Təşkilatçılar</a></li>
           <li><a href="./muraciet.html">Müraciət et</a></li>
           <li><a href="./contact.html">Əlaqə</a></li>
         </ul>
       </nav>
     </section>
 
-    <section class="formbox" style="padding-bottom: 100px; padding-top: 20px;">
+    <div class="text-bg-danger text-center p-1 h3"><p>Son müraciət vaxtı : 11 dekabr saat 12:00</p></div>
+
+    <section class="formbox" style="padding-bottom: 100px; padding-top: 20px">
       <form action="">
         <label for="">ad soyad</label>
-        <input type="text" placeholder="ad və soyad"/>
+        <input type="text" placeholder="ad və soyad" />
         <label for="">əlaqə nömrəsi</label>
-        <input type="number"placeholder="əlaqə nömrəsi" />
+        <input type="number" placeholder="əlaqə nömrəsi" />
         <label for="">email</label>
         <input type="email" placeholder="aktiv işlətdiyiniz email adres" />
         <label for=""
@@ -80,7 +89,10 @@
           <input type="radio" />
           <label for="">robotit texnologiyalar</label><br />
           <input type="radio" />
-          <label for="">digər</label><br /><input type="text" placeholder="digər hansı sahə ?" />
+          <label for="">digər</label><br /><input
+            type="text"
+            placeholder="digər hansı sahə ?"
+          />
         </div>
 
         <label for="">layihəniz hansı mərhələdədir?</label>
@@ -92,14 +104,26 @@
           <label for="">mpv</label><br />
         </div>
         <label for="">layihənizin təqdimatı PDF</label>
-        <input type="file" name="" id="">
+        <input type="file" name="" id="" />
 
-        <label for="">Layihə <span>haqqında məlumatı hardan əldə edibsiniz ?</span></label>
+        <label for=""
+          >Layihə <span>haqqında məlumatı hardan əldə edibsiniz ?</span></label
+        >
         <input type="text" />
         <button type="button" class="btn btn-light">Müraciəti tamamla</button>
       </form>
     </section>
-
+    <section style="height: 100px"></section>
+    <footer style="position: fixed; bottom: 0; width: 100%">
+      <div class="bg-light d-flex p-3" style="justify-content: space-between">
+        <div>
+          <img width="70px" src="./media for desctop/ADB-LOGO.png" alt="" />
+        </div>
+        <div>
+          <img height="70px" src="./media for desctop/EAKPF-LOGO.png" alt="" />
+        </div>
+      </div>
+    </footer>
 
     <!--* Bootstrap -->
     <script
