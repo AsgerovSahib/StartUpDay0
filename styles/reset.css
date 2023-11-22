@@ -132,3 +132,14 @@ table {
 * {
   font-family: "Roboto", sans-serif !important;
 }
+footer {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 254, 0.8016456582633054) 37%,
+    rgba(255, 255, 254, 0.6027661064425771) 63%,
+    rgba(255, 255, 254, 0.29744397759103647) 83%,
+    rgba(255, 255, 254, 0) 100%
+  );
+}
