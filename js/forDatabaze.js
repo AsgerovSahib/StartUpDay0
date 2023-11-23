@@ -116,8 +116,16 @@ function handleButtonClick() {
       infoHardandir: infoHardandirValue,
     });
 
+   
     // İşlem başarılıysa kullanıcıya bir mesaj gösterilebilir
     alert("Müraciətiniz uğurla qeydə alındı!");
+    var beklemeSuresi = 500;
+
+    // setTimeout fonksiyonu ile belirtilen süre sonra başka bir sayfaya yönlendirme
+    setTimeout(function() {
+      window.location.href = "./index.html";
+    }, beklemeSuresi);
+
   } else {
     alert("XƏTA (Boşluqları tam doldurmağınızı xahis edirik!)");
   }
