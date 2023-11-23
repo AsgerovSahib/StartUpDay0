@@ -33,7 +33,8 @@ nav {
   align-items: end;
   justify-content: end;
 
-  background-color: rgba(32, 16, 48, 0.704);
+  border-radius: 20px;
+  background-color: rgba(56, 55, 56, 0.704);
 }
 nav ul {
   border-radius: 20px;

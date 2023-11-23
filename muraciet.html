@@ -27,18 +27,16 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!--* font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha384-d7PhP56m0f3wOgNiHdHLXzcf+H93/Ks6FfrzLb6f/8m5voDbr46ePVCzjs0FMEg9"
-      crossorigin="anonymous"
-    />
   </head>
 
   <body style="background-image: url(./media/bg-media.jfif)">
     <header>
-      <h1>startupday</h1>
+      <img
+        width="150px"
+        style="border-radius: 20px"
+        src="./media for desctop/rok.png"
+        alt=""
+      />
       <button id="toggleButton" style="background: none; border: none">
         <!-- <i class="fa-solid fa-bars"></i> -->
         <!-- <img width="30px" src="./media/menu.png" alt="" /> -->
@@ -69,63 +67,108 @@
     <section class="formbox" style="padding-bottom: 100px; padding-top: 40px">
       <form action="">
         <label for="">ad soyad</label>
-        <input type="text" placeholder="ad və soyad" />
+        <input id="nameAndSurname" type="text" placeholder="ad və soyad" />
         <label for="">əlaqə nömrəsi</label>
-        <input type="number" placeholder="əlaqə nömrəsi" />
+        <input id="phoneNumber" type="number" placeholder="əlaqə nömrəsi" />
         <label for="">email</label>
-        <input type="email" placeholder="aktiv işlətdiyiniz email adres" />
+        <input
+          id="mailAdres"
+          type="email"
+          placeholder="aktiv işlətdiyiniz email adres"
+        />
         <label for=""
           >layihənin təsviri
           <span style="text-transform: lowercase">(max 500 söz)</span></label
         >
-        <textarea name="" id="" cols="10" rows="5" maxlength="500"></textarea>
+        <textarea
+          id="layheTesviri"
+          name=""
+          id=""
+          cols="10"
+          rows="5"
+          maxlength="500"
+          placeholder="zəhmət olmasa hərf səhvinə yol vermədən qeydlərinizi aparın"
+        ></textarea>
 
         <label for=""
           >layihənin həll etdiyi problemlər
           <span style="text-transform: lowercase">(max 500 söz)</span></label
         >
-        <textarea name="" id="" cols="10" rows="5" maxlength="500"></textarea>
+        <textarea
+          id="layheHellEtdiyiPreablem"
+          name=""
+          id=""
+          cols="10"
+          rows="5"
+          maxlength="500"
+          placeholder="zəhmət olmasa prablemi tam izah edin"
+        ></textarea>
 
         <label for="">layihəniz hansı sahəyə aitdir?</label>
 
         <div>
-          <input name="sahe" type="radio" />
-          <label name="sahe" for="">finans</label><br />
-          <input name="sahe" type="radio" />
-          <label for="">aqrar və yaşıl texnologiya</label><br />
-          <input name="sahe" type="radio" />
-          <label for="">robotit texnologiyalar</label><br />
-          <input name="sahe" type="radio" />
-          <label for="">digər</label><br />
-          <input name="sahe" type="text" placeholder="digər hansı sahə ?" />
+          <input id="finans" name="sahe" type="radio" value="finans" />
+          <label for="finans">finans</label><br />
+          <input id="aqrar" name="sahe" type="radio" value="aqrar" />
+          <label for="aqrar">aqrar və yaşıl texnologiya</label><br />
+          <input id="robot" name="sahe" type="radio" value="robot" />
+          <label for="robot">robotik texnologiyalar</label><br />
+          <input id="dig" name="sahe" type="radio" />
+          <label for="dig">digər</label><br />
+          <input
+            id="digSahesi"
+            name="sahe"
+            type="text"
+            placeholder="digər hansı sahə?"
+          />
         </div>
+        <!-- 
+        <div>
+          <input id="layheSahesi" name="sahe" type="radio" value="finans" />
+          <label name="sahe" for="">finans</label><br />
+          <input id="layheSahesi" name="sahe" type="radio" value="aqrar" />
+          <label for="">aqrar və yaşıl texnologiya</label><br />
+          <input id="layheSahesi" name="sahe" type="radio" value="robot" />
+          <label for="">robotit texnologiyalar</label><br />
+          <input id="layheSahesi" name="sahe" type="radio" />
+          <label for="">digər</label><br />
+          <input id="layheSahesi" name="sahe" type="text" placeholder="digər hansı sahə ?" />
+        </div> -->
 
         <label for="">layihəniz hansı mərhələdədir?</label>
 
         <div>
-          <input name="merhele" type="radio" />
-          <label for="">idea</label><br />
-          <input name="merhele" type="radio" />
-          <label for="">mpv</label><br />
+          <input id="idea" name="merhele" type="radio" value="idea" />
+          <label for="idea">idea</label><br />
+          <input id="mpv" name="merhele" type="radio" value="mpv" />
+          <label for="mpv">mpv</label><br />
         </div>
-        <label for="">layihənizin təqdimatı PDF</label>
-        <input type="file" name="" id="" />
+        <label for="">layihənizin təqdimatı (link)</label>
+        <input
+          id="layheTeqdimat"
+          type="text"
+          name=""
+          id=""
+          placeholder="(Google Drive, Dropbox, OneDrive)"
+        />
 
         <label for=""
           >Layihə <span>haqqında məlumatı hardan əldə edibsiniz ?</span></label
         >
-        <input type="text" />
-        <button type="button" class="btn btn-light">Müraciəti tamamla</button>
+        <input id="infoHardandir" type="text" placeholder="sosial media / dost və ya ..." />
+        <button type="button" class="btn btn-light" id="muracietEtButton">
+          Müraciəti tamamla
+        </button>
       </form>
     </section>
-    <section style="height: 100px"></section>
+    <!-- <section style="height: 100px"></section> -->
     <footer style="position: fixed; bottom: 0; width: 100%">
       <div class="d-flex p-2" style="justify-content: space-between">
         <div>
-          <img width="60px" src="./media for desctop/ADB-LOGO.png" alt="" />
+          <img width="40px" src="./media for desctop/ADB-LOGO.png" alt="" />
         </div>
         <div>
-          <img height="60px" src="./media for desctop/EAKPF-LOGO.png" alt="" />
+          <img height="40px" src="./media for desctop/EAKPF-LOGO.png" alt="" />
         </div>
       </div>
     </footer>
@@ -143,5 +186,7 @@
     ></script>
     <!--* Other js -->
     <script src="./js/menuBtn.js"></script>
+
+    <script src="./js/forDatabaze.js" type="module"></script>
   </body>
 </html>
