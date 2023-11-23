@@ -26,6 +26,7 @@ if (selectedValue === "dig") {
 }
 let layheTeqdimat = document.querySelector("#layheTeqdimat");
 let infoHardandir = document.querySelector("#infoHardandir");
+
 // Firebase setting
 const firebaseConfig = {
   apiKey: "AIzaSyAJGxKn5LovzE31gDdpyNXJz48AhY1s7lE",
@@ -89,22 +90,37 @@ function handleButtonClick() {
 
   const layheTeqdimatValue = layheTeqdimat.value;
   const infoHardandirValue = infoHardandir.value;
-  // Veritabanına veriyi ekle
-  writePushData("deneme1", {
-    Name: nameAndSurnameValue,
-    Number: phoneNumberValue,
-    mail: mailAdresValue,
-    layheTesviri: layheTesviriValue,
-    layheHellEtdiyiPreablem: layheHellEtdiyiPreablemValue,
-    selectedValue: selectedValueValue,
-    digSahesi: digSahesiValue,
-    selectIdeaLevel: selectIdeaLevelValue,
-    layheTeqdimat: layheTeqdimatValue,
-    infoHardandir: infoHardandirValue,
-  });
 
-  // İşlem başarılıysa kullanıcıya bir mesaj gösterilebilir
-  alert("Müraciətiniz uğurla qeydə alındı!");
+  // ^ button control panel ---------------
+  if (
+    nameAndSurnameValue !== "" &&
+    phoneNumberValue !== "" &&
+    mailAdresValue !== "" &&
+    layheTesviriValue !== "" &&
+    layheHellEtdiyiPreablemValue !== "" &&
+    selectIdeaLevelValue !== "" &&
+    layheTeqdimatValue !== "" &&
+    infoHardandirValue !== ""
+  ) {
+    // Veritabanına veriyi ekle
+    writePushData("deneme1", {
+      Name: nameAndSurnameValue,
+      Number: phoneNumberValue,
+      mail: mailAdresValue,
+      layheTesviri: layheTesviriValue,
+      layheHellEtdiyiPreablem: layheHellEtdiyiPreablemValue,
+      selectedValue: selectedValueValue,
+      digSahesi: digSahesiValue,
+      selectIdeaLevel: selectIdeaLevelValue,
+      layheTeqdimat: layheTeqdimatValue,
+      infoHardandir: infoHardandirValue,
+    });
+
+    // İşlem başarılıysa kullanıcıya bir mesaj gösterilebilir
+    alert("Müraciətiniz uğurla qeydə alındı!");
+  } else {
+    alert("XƏTA (Boşluqları tam doldurmağınızı xahis edirik!)");
+  }
 }
 
 // Butona tıklandığında handleButtonClick fonksiyonunu çağır
